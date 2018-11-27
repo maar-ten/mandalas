@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inobounce/0.1.6/inobounce.min.js"></script>
+
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div id="settings">
+    <select id="symmetry"
+            name="symmetry"
+            onchange="setSymmetry()">
+        <option>1</option>
+        <option>2</option>
+        <option selected>4</option>
+        <option>8</option>
+    </select>
+    <select id="drawingType"
+            onchange="setDrawingType()">
+        <option selected>mirror</option>
+        <option>radial</option>
+    </select>
+    <input id="size"
+           type="range"
+           name="shapesize"
+           min="5" max="200" value="50"
+           onchange="setShapeSize()">
+    <input id="speed"
+           type="range"
+           name="speed"
+           min="-10" max="10" value="0"
+           onchange="setColorCycleSpeed()">
+    <input id="color"
+           type="color"
+           name="color"
+           size="5"
+           value="#ffffff"
+           onchange="setColor()">
+    <input id="cycleColor"
+           type="button"
+           value="cycle color"
+           onclick="startColorCycle()">
+    <input id="clear"
+           type="button"
+           value="clear canvas"
+           onclick="clearCanvas()">
+</div>
+<img id="loadingImg"
+     onclick="removeLoadingImg()"
+     src="https://raw.githubusercontent.com/maar-ten/mandalas/master/src/assets/example_mandala.png">
+<script src="mandalas.js"></script>
+</body>
+
+</html>
