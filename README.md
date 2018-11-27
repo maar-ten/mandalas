@@ -1,6 +1,7 @@
-![Example Mandala](assets/example_mandala.png)
+![Example Mandala](./src/assets/example_mandala.png)
 
-Drawing mandalas can be very relaxing.
+# Mandalas
+Drawing mandalas can be very relaxing and I really like doing it sometimes.
 So when I was introduced to the graphical JavaScript library P5, 
 it was an obvious choice to create a little program that lets you draw these patterns.
 
