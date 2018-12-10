@@ -4,6 +4,7 @@ body {
     padding: 0;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
+    overscroll-behavior: none;
 }
 
 #settings {
