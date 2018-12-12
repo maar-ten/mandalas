@@ -12,47 +12,39 @@
 <body>
 <div id="settings">
     <select id="symmetry"
-            name="symmetry"
-            onchange="setSymmetry()">
+            name="symmetry">
         <option>1</option>
         <option>2</option>
-        <option selected>4</option>
-        <option>8</option>
+        <option>4</option>
+        <option selected>8</option>
     </select>
-    <select id="drawingType"
-            onchange="setDrawingType()">
-        <option selected>mirror</option>
-        <option>radial</option>
+    <select id="symmetryType">
+        <option value="1">mirror</option>
+        <option value="2" selected>radial</option>
     </select>
     <input id="size"
            type="range"
            name="shapesize"
-           min="5" max="200" value="50"
-           onchange="setShapeSize()">
+           min="5" max="200" value="50">
     <input id="speed"
            type="range"
            name="speed"
-           min="-10" max="10" value="0"
-           onchange="setColorCycleSpeed()">
+           min="-10" max="10" value="0">
     <input id="color"
            type="color"
            name="color"
            size="5"
-           value="#ffffff"
-           onchange="setColor()">
+           value="#ffffff">
     <input id="cycleColor"
            type="button"
-           value="cycle color"
-           onclick="startColorCycle()">
+           value="cycle color">
     <input id="clear"
            type="button"
-           value="clear canvas"
-           onclick="clearCanvas()">
+           value="clear canvas">
 </div>
 <img id="loadingImg"
-     onclick="removeLoadingImg()"
      src="https://raw.githubusercontent.com/maar-ten/mandalas/master/src/assets/example_mandala.png">
-<script src="index.js"></script>
+<script type="module" src="./index.js"></script>
 </body>
 
 </html>
