@@ -1,4 +1,4 @@
-![Example Mandala](./src/assets/example_mandala_small.png)
+![Example Mandala](./assets/example_mandala_small.png)
 
 # Mandalas
 Drawing mandalas can be very relaxing and I really like doing it sometimes.
